@@ -1,58 +1,37 @@
-# Codemate.AI - AI-Powered Code Review Assistant
+# Code Review Assistant - AI-Powered Code Review Tool
 
 [![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
 [![Vite](https://img.shields.io/badge/Vite-4.4.5-646CFF.svg)](https://vitejs.dev/)
 [![Node.js](https://img.shields.io/badge/Node.js-18+-green.svg)](https://nodejs.org/)
 [![License](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-A modern, professional AI-powered code review platform that elevates code quality through automated analysis, instant feedback, and comprehensive team insights.
+A modern, professional AI-powered code review platform that elevates code quality through automated analysis, instant feedback, and intelligent insights for individual developers.
 
 ## ✨ Features
 
-### 🤖 AI Code Reviews
-- Instant, actionable feedback directly on your pull requests
-- Powered by Gemini AI for intelligent code analysis
-- Catch bugs, security vulnerabilities, and code quality issues early
+### ⏱️ The Code Velocity Predictor
+- Uses historical commit data and code complexity metrics (analyzed by AI) to forecast the estimated time to completion for open Pull Requests (PRs) and feature branches
+- Get an early warning if a feature is slowing down, allowing you to adjust deadlines and improve project predictability
 
-### 🏆 Developer Leaderboard
-- Celebrate coding champions and drive positive competition
-- Track developer performance and contributions
-- Gamification elements to encourage best practices
+### 🧠 Cognitive Load Heatmap
+- Analyzes the concentration of bug reports and frequent refactoring activity across the codebase, generating a visual 'heat map' that highlights areas of high cognitive load
+- Helps prioritize technical debt reduction efforts and identify modules that need better documentation or decomposition
 
-### 📊 DORA Metrics & Benchmarks
-- Trusted reports for deployment frequency, lead time, and more
-- Industry-standard metrics for engineering excellence
-- Data-driven insights for team optimization
+### 👨‍🏫 AI Mentor for PR Feedback
+- Instead of just flagging errors, the AI delivers feedback in a customizable 'mentor persona' (e.g., 'Skeptical Architect,' 'Encouraging Senior Dev,' 'Abrasive Tech Lead')
+- Provides educational, structured, and consistent feedback, accelerating your learning
 
-### 🧠 AI Engineering Manager
-- Synthesized, strategic insights across engineering teams
-- Automated analysis of team productivity and roadblocks
-- AI-driven recommendations for process improvements
+### 🔍 Code Climate Fingerprinting (Style Drift Detection)
+- Continuously monitors the entire repository to detect 'style drift'—instances where code formatting, variable naming conventions, or structural patterns deviate from the established norm
+- Enforces codebase consistency, preventing the project from becoming a chaotic 'Franken-codebase' as it grows
 
-### 🐛 Code Quality & Bug Detection
-- Early detection of security vulnerabilities and code issues
-- Comprehensive static analysis and linting
-- Automated code quality scoring
+### 🛡️ AI Burnout Shield (Commit Pattern Analysis)
+- The AI monitors your commit timestamps and activity spikes. If you show prolonged patterns of late-night, weekend, or excessive continuous commit activity, the 'Burnout Shield' alerts you privately
+- Proactively helps maintain your health and prevents burnout by identifying unsustainable work patterns
 
-### 📝 AI Commit Summaries
-- Clear, human-readable summaries for every commit
-- Automated documentation of code changes
-- Improved code review efficiency
-
-### 💡 Team Insights by AI
-- Understand team productivity, roadblocks, and code trends
-- AI-powered analysis of development patterns
-- Actionable insights for team leads and managers
-
-### 📧 Daily Team Reports
-- Automated summaries delivered to Slack & Email
-- Regular updates on team performance and progress
-- Customizable reporting dashboards
-
-### 🌟 Developer Badges & Gamification
-- Achievement-based rewards for coding excellence
-- Fun, engaging recognition system
-- Motivation through gamified development practices
+### 🔧 AI-Powered Code Refactoring Assistant
+- Scans the codebase to identify code smells, duplicated code, and areas ripe for refactoring
+- Provides automated suggestions for improvements, such as extracting methods, simplifying complex functions, or applying design patterns
 
 ## 🚀 Getting Started
 
@@ -64,8 +43,8 @@ A modern, professional AI-powered code review platform that elevates code qualit
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/your-username/codemate-ai.git
-   cd codemate-ai
+   git clone https://github.com/subhaliAR21/Code-Review-Assistant-Project.git
+   cd Code-Review-Assistant-Project
    ```
 
 2. **Install client dependencies**
@@ -120,32 +99,28 @@ A modern, professional AI-powered code review platform that elevates code qualit
 ## 📁 Project Structure
 
 ```
-codemate-ai/
+Code-Review-Assistant-Project/
 ├── client/                 # React frontend
 │   ├── public/            # Static assets
 │   ├── src/
 │   │   ├── components/    # Reusable React components
-│   │   ├── pages/         # Page components
 │   │   ├── ThemeContext.jsx # Theme management
 │   │   ├── App.jsx        # Main application component
-│   │   └── main.jsx       # Application entry point
+│   │   ├── App.css        # Main application styles
+│   │   ├── index.css      # Global styles
+│   │   ├── main.jsx       # Application entry point
+│   │   └── assets/        # Static assets
 │   ├── package.json
-│   └── vite.config.js
+│   ├── vite.config.js
+│   ├── index.html
+│   └── eslint.config.js
 ├── server/                # Node.js backend
 │   ├── index.js          # Server entry point
 │   └── package.json
-└── README.md
+├── README.md
+├── TODO.md
+└── .gitignore
 ```
-
-## 🤝 Contributing
-
-We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add some amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
 
 ## 📄 License
 
